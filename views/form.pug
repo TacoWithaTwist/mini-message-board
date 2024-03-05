@@ -1,0 +1,11 @@
+extends layout
+block content 
+  h1 #{title}
+  p Add a new message Now!
+  form(method= 'POST',action= '/new' )
+    label(for="user") Username 
+    input(type="text" name='userName')
+    label(for="message") Message 
+    input(type="textarea" name='messageText')
+    button(type="submit" ) Submit
+      
